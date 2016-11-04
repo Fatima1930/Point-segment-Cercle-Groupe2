@@ -20,8 +20,12 @@ public class Segment {
 
 		return Math.sqrt(
 				(Math.pow((B.getAbcisse() - A.getAbcisse()), 2) + Math.pow((B.getOrdonne() - A.getOrdonne()), 2)));
-	}
-
+		
+		public float SegmentCentre( point A,Point B){
+			return new math.sgrt(
+				math.pow((B.getAbcisse() - A.getAbcisse())/2, 2) + Math.pow((B.getOrdonne() - A.getOrdonne())/2, 2)));
+			
+			
 	public Segment symetrie(Point A, Point B) {
 
 		return new Segment((A.symertie()), (B.symertie()));
